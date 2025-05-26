@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Glass Clicker — Питомцы, скины, колесо удачи!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="main-bg">
+    <button class="theme-toggle" id="theme-toggle" title="Переключить тему">🌙</button>
+    <div class="clicker-card glass">
+      <h1 class="title-glass">GLASS CLICKER</h1>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="main">Кликер</button>
+        <button class="tab-btn" data-tab="pets">Питомцы</button>
+        <button class="tab-btn" data-tab="skins">Скины</button>
+        <button class="tab-btn" data-tab="minigame">Колесо удачи</button>
+      </div>
+      <div class="tab-content show" id="tab-main">
+        <div class="count-display" id="counter">0</div>
+        <button class="glass-btn" id="clicker">
+          <span class="btn-ring"></span>
+          <span class="btn-label" id="click-label">Клик!</span>
+        </button>
+        <div class="panel glass">
+          <div class="multiplier">
+            <span>Множитель: </span><span id="multiplier">x1</span>
+          </div>
+          <button class="glass-btn mini" id="upgrade" disabled>Улучшить (50)</button>
+        </div>
+        <div class="panel glass achievements" id="achievements"></div>
+      </div>
+      <div class="tab-content" id="tab-pets">
+        <h2>Питомцы</h2>
+        <div id="pets-list"></div>
+      </div>
+      <div class="tab-content" id="tab-skins">
+        <h2>Скины</h2>
+        <div id="skins-list"></div>
+      </div>
+      <div class="tab-content" id="tab-minigame">
+        <h2>Колесо удачи</h2>
+        <div id="wheel-container">
+          <button class="glass-btn" id="spin-btn">Крутить колесо</button>
+          <div id="wheel-result"></div>
+          <div id="wheel-cooldown"></div>
+        </div>
+      </div>
+      <footer class="footer-glass">by ArtemPlay15</footer>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
